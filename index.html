@@ -5,12 +5,17 @@
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="https://unpkg.com/98.css" />
 </head>
-
+<style>
+.zoomed {
+    zoom: 1.2;
+    -moz-transform: scale(1.5);
+}
+</style>
 <body style="background-color: blue;">
-<div class="window" style="margin: auto; width: 350px; margin-top: 100px">
+<div class="window zoomed" style="margin: auto; width: 350px; margin-top: 150px">
       <div class="title-bar">
         <div class="title-bar-text">
-          A/D CTF
+          mHACKeCTF Enterprise Edition
         </div>
 
         <div class="title-bar-controls">
@@ -20,7 +25,8 @@
         </div>
       </div>
       <div class="window-body">
-        <p>Hello, world!</p>
+        <p style="margin-bottom: 0">Hello, world!</p>
+        <p style="margin-top:0">Are you ready for a new <strong>Attack/Defense CTF</strong> experience?</p>
         <img src="mhackelogo.png" style="height: 128px; margin-left: 30%;">
         <p>mHACKeCTF is coming... &nbsp; &nbsp; <span style="margin: auto;" id="countdownplace"></span></p>
         <p>Saturday 17 October 2020, 12:00 UTC to 22:00 UTC</p>

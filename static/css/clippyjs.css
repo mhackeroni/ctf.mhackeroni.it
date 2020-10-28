@@ -1,0 +1,1182 @@
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+
+/* #Basic Styles
+================================================== */
+body {
+    background: #fff;
+    font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+
+/* #Typography
+================================================== */
+
+p.lead {
+    font-size: 21px;
+    line-height: 27px;
+    color: #777;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+    color: #333;
+}
+
+small {
+    font-size: 80%;
+}
+
+/* #Images
+================================================== */
+
+img.scale-with-grid {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+
+/* Table of Contents
+==================================================
+#Base 960 Grid
+#Tablet (Portrait)
+#Mobile (Portrait)
+#Mobile (Landscape)
+#Clearing */
+
+/* #Base 960 Grid
+================================================== */
+
+.container {
+    position: relative;
+    /* width: 770px; */
+    width: 890px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.column, .columns {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+/* Nested Column Classes */
+.column.alpha, .columns.alpha {
+    margin-left: 0;
+}
+
+.column.omega, .columns.omega {
+    margin-right: 0;
+}
+
+/* Base Grid */
+.container .one.column {
+    width: 40px;
+}
+
+.container .two.columns {
+    width: 100px;
+}
+
+.container .three.columns {
+    width: 160px;
+}
+
+.container .four.columns {
+    width: 220px;
+}
+
+.container .five.columns {
+    width: 280px;
+}
+
+.container .six.columns {
+    width: 340px;
+}
+
+.container .seven.columns {
+    width: 400px;
+}
+
+.container .eight.columns {
+    width: 460px;
+}
+
+.container .nine.columns {
+    width: 520px;
+}
+
+.container .ten.columns {
+    width: 580px;
+}
+
+.container .eleven.columns {
+    width: 640px;
+}
+
+.container .twelve.columns {
+    width: 700px;
+}
+
+.container .thirteen.columns {
+    width: 760px;
+}
+
+.container .fourteen.columns {
+    width: 820px;
+}
+
+.container .fifteen.columns {
+    width: 880px;
+}
+
+.container .sixteen.columns {
+    width: 940px;
+}
+
+.container .one-third.column {
+    width: 300px;
+}
+
+.container .two-thirds.column {
+    width: 620px;
+}
+
+/* Offsets */
+.container .offset-by-one {
+    padding-left: 60px;
+}
+
+.container .offset-by-two {
+    padding-left: 120px;
+}
+
+.container .offset-by-three {
+    padding-left: 180px;
+}
+
+.container .offset-by-four {
+    padding-left: 240px;
+}
+
+.container .offset-by-five {
+    padding-left: 300px;
+}
+
+.container .offset-by-six {
+    padding-left: 360px;
+}
+
+.container .offset-by-seven {
+    padding-left: 420px;
+}
+
+.container .offset-by-eight {
+    padding-left: 480px;
+}
+
+.container .offset-by-nine {
+    padding-left: 540px;
+}
+
+.container .offset-by-ten {
+    padding-left: 600px;
+}
+
+.container .offset-by-eleven {
+    padding-left: 660px;
+}
+
+.container .offset-by-twelve {
+    padding-left: 720px;
+}
+
+.container .offset-by-thirteen {
+    padding-left: 780px;
+}
+
+.container .offset-by-fourteen {
+    padding-left: 840px;
+}
+
+.container .offset-by-fifteen {
+    padding-left: 900px;
+}
+
+/* #Tablet (Portrait)
+================================================== */
+
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    .container {
+        width: 626px;
+    }
+
+    .container .column,
+    .container .columns {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .column.alpha, .columns.alpha {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .column.omega, .columns.omega {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .container .one.column {
+        width: 28px;
+    }
+
+    .container .two.columns {
+        width: 76px;
+    }
+
+    .container .three.columns {
+        width: 124px;
+    }
+
+    .container .four.columns {
+        width: 172px;
+    }
+
+    .container .five.columns {
+        width: 220px;
+    }
+
+    .container .six.columns {
+        width: 268px;
+    }
+
+    .container .seven.columns {
+        width: 316px;
+    }
+
+    .container .eight.columns {
+        width: 364px;
+    }
+
+    .container .nine.columns {
+        width: 412px;
+    }
+
+    .container .ten.columns {
+        width: 460px;
+    }
+
+    .container .eleven.columns {
+        width: 508px;
+    }
+
+    .container .twelve.columns {
+        width: 556px;
+    }
+
+    .container .thirteen.columns {
+        width: 604px;
+    }
+
+    .container .fourteen.columns {
+        width: 652px;
+    }
+
+    .container .fifteen.columns {
+        width: 700px;
+    }
+
+    .container .sixteen.columns {
+        width: 748px;
+    }
+
+    .container .one-third.column {
+        width: 236px;
+    }
+
+    .container .two-thirds.column {
+        width: 492px;
+    }
+
+    /* Offsets */
+    .container .offset-by-one {
+        padding-left: 48px;
+    }
+
+    .container .offset-by-two {
+        padding-left: 96px;
+    }
+
+    .container .offset-by-three {
+        padding-left: 144px;
+    }
+
+    .container .offset-by-four {
+        padding-left: 192px;
+    }
+
+    .container .offset-by-five {
+        padding-left: 240px;
+    }
+
+    .container .offset-by-six {
+        padding-left: 288px;
+    }
+
+    .container .offset-by-seven {
+        padding-left: 336px;
+    }
+
+    .container .offset-by-eight {
+        padding-left: 348px;
+    }
+
+    .container .offset-by-nine {
+        padding-left: 432px;
+    }
+
+    .container .offset-by-ten {
+        padding-left: 480px;
+    }
+
+    .container .offset-by-eleven {
+        padding-left: 528px;
+    }
+
+    .container .offset-by-twelve {
+        padding-left: 576px;
+    }
+
+    .container .offset-by-thirteen {
+        padding-left: 624px;
+    }
+
+    .container .offset-by-fourteen {
+        padding-left: 672px;
+    }
+
+    .container .offset-by-fifteen {
+        padding-left: 720px;
+    }
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 320px){
+    .container {
+        width: 270px !important;
+    }
+}
+
+@media only screen and (max-width: 529px) {
+
+
+    .window {
+        margin: 0 !important;
+    }
+
+    .left-ruler {
+        display: none;
+    }
+
+    .document-scroller {
+        overflow-y: scroll;
+        margin-left: 0px !important;
+    }
+
+    .document-wrap {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+
+    .toolbar {
+        display: none;
+    }
+
+
+    .status-bar {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .container {
+        width: 345px;
+    }
+
+    .columns, .column {
+        margin: 0;
+    }
+
+    .container .one.column,
+    .container .two.columns,
+    .container .three.columns,
+    .container .four.columns,
+    .container .five.columns,
+    .container .six.columns,
+    .container .seven.columns,
+    .container .eight.columns,
+    .container .nine.columns,
+    .container .ten.columns,
+    .container .eleven.columns,
+    .container .twelve.columns,
+    .container .thirteen.columns,
+    .container .fourteen.columns,
+    .container .fifteen.columns,
+    .container .sixteen.columns,
+    .container .one-third.column,
+    .container .two-thirds.column {
+        width: 250px;
+    }
+
+    /* Offsets */
+    .container .offset-by-one,
+    .container .offset-by-two,
+    .container .offset-by-three,
+    .container .offset-by-four,
+    .container .offset-by-five,
+    .container .offset-by-six,
+    .container .offset-by-seven,
+    .container .offset-by-eight,
+    .container .offset-by-nine,
+    .container .offset-by-ten,
+    .container .offset-by-eleven,
+    .container .offset-by-twelve,
+    .container .offset-by-thirteen,
+    .container .offset-by-fourteen,
+    .container .offset-by-fifteen {
+        padding-left: 0;
+    }
+
+}
+
+/* #Mobile (Landscape)
+================================================== */
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 529px) and (max-width: 767px) {
+    .container {
+        width: 450px;
+    }
+
+    .document-wrap {
+        padding-right: 14px !important;
+        padding-left: 14px !important;
+    }
+
+    .columns, .column {
+        margin: 0;
+    }
+
+    .container .one.column,
+    .container .two.columns,
+    .container .three.columns,
+    .container .four.columns,
+    .container .five.columns,
+    .container .six.columns,
+    .container .seven.columns,
+    .container .eight.columns,
+    .container .nine.columns,
+    .container .ten.columns,
+    .container .eleven.columns,
+    .container .twelve.columns,
+    .container .thirteen.columns,
+    .container .fourteen.columns,
+    .container .fifteen.columns,
+    .container .sixteen.columns,
+    .container .one-third.column,
+    .container .two-thirds.column {
+        width: 420px;
+    }
+}
+
+/* #Clearing
+================================================== */
+
+/* Self Clearing Goodness */
+.container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.row:after,
+.clearfix:after {
+    clear: both;
+}
+
+.row,
+.clearfix {
+    zoom: 1;
+}
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+/* #Page Styles
+================================================== */
+body {
+    background: #fff;
+}
+
+h1, h2, h3 {
+    color: #4f81bd;
+    font-family: 'BebasNeueRegular', sans-serif;
+}
+
+h1, h2, h3, blockquote {
+    overflow: hidden;
+}
+
+/* h1 {
+    font-size: 120px;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 36px
+} */
+
+h2, blockquote {
+    font-family: 'YanoneKaffeesatzRegular';
+    font-weight: normal;
+}
+
+/* h2 {
+    color: #a9a8a8;
+    font-size: 30px
+} */
+
+p, li {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    color: #5b5b5b;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.element-title {
+    margin-bottom: 20px;
+}
+
+.element-header {
+    margin-top: 35px;
+}
+
+.header {
+    border-top: 5px solid #646464;
+    overflow: hidden;
+}
+
+.header img {
+    margin: -5px auto 0 auto;
+    padding-right: 30px;
+}
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .fork-ribbon {
+        display: none;
+    }
+
+    .element-buttons a.last {
+        box-shadow: none;
+        border-top: 1px solid #e98e8b;
+    }
+
+    .element-buttons a.first {
+        box-shadow: none;
+        border-bottom: 1px solid #9F2F2F;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 529px) {
+
+}
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+
+@font-face {
+    font-family: 'YanoneKaffeesatzRegular';
+    src: url('../fonts/YanoneKaffeesatz-Regular-webfont.eot');
+    src: url('../fonts/YanoneKaffeesatz-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/YanoneKaffeesatz-Regular-webfont.woff') format('woff'), url('../fonts/YanoneKaffeesatz-Regular-webfont.ttf') format('truetype'), url('../fonts/YanoneKaffeesatz-Regular-webfont.svg#YanoneKaffeesatzRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeue-webfont.woff') format('woff'), url('../fonts/BebasNeue-webfont.ttf') format('truetype'), url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background: #102133;
+}
+
+.clear {
+    clear: both;
+}
+
+.window {
+    margin: 5px 5px 0 5px;
+    border: 1px solid #d6d6ce;
+    border-right-color: #424242;
+    border-bottom-color: #424242;
+    font-family: "Tahoma", sans-serif;
+    font-size: 11px;
+}
+
+.window-border {
+    border: 1px solid #ffffff;
+    border-right-color: #848484;
+    border-bottom-color: #848484;
+    background: #d6d6ce;
+    padding: 2px;
+}
+
+/****
+* Title bar
+***/
+
+.title-bar {
+    padding: 0;
+    background: #08216b; /* Old browsers */
+    background: -moz-linear-gradient(left, #08216b 0%, #a5cef7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #08216b), color-stop(100%, #a5cef7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #08216b 0%, #a5cef7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #08216b 0%, #a5cef7 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #08216b 0%, #a5cef7 100%); /* IE10+ */
+    background: linear-gradient(left, #08216b 0%, #a5cef7 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#08216b', endColorstr = '#a5cef7', GradientType = 1); /* IE6-9 */
+    color: #fff;
+    font-weight: bold;
+}
+
+.title-bar .title {
+    padding-left: 20px;
+    display: block;
+    background: url(/static/img/clippy/window/word.png) no-repeat left center;
+    white-space: nowrap;
+    overflow: hidden;              /* "overflow" value must be different from "visible" */
+    text-overflow:    ellipsis;
+}
+
+.control-box {
+    float: right;
+    margin: 2px;
+}
+
+.button-3d {
+    display: block;
+    float: left;
+    border: 1px solid #ffffff;
+    border-right-color: #424242;
+    border-bottom-color: #424242;
+    background: #d6d6ce;
+    height: 14px;
+    width: 16px;
+    color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+}
+
+.button-3d span {
+    display: block;
+    border: 1px solid #848484;
+    border-top-width: 0;
+    border-left-width: 0;
+    font-size: 1px;
+    line-height: 13px;
+}
+
+.button-3d.maximize {
+    margin-right: 2px;
+    margin-left: 1px;
+}
+
+.button-3d.close {
+    background-image: url(/static/img/clippy/window/close.png);
+}
+
+.button-3d.maximize {
+    background-image: url(/static/img/clippy/window/maximize.png);
+}
+
+.button-3d.minimize {
+    background-image: url(/static/img/clippy/window/minimize.png);
+}
+
+/****
+* Menu bar
+***/
+
+.toolbar {
+    height: 24px;
+    overflow: hidden;
+    margin: 2px 1px;
+    padding:0 7px;
+    background: url(/static/img/clippy/window/toolbar-grip.png) no-repeat 2px 6px, linear-gradient(#f0f0ea,#cecec8);
+}
+.menu-bar{
+    line-height: 18px;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 9px;
+}
+
+.menu-bar a span {
+    text-decoration: underline;
+}
+
+/****
+* Toolbar
+***/
+
+.toolbar {
+    background-color: #deded6;
+    border-radius: 1px;
+}
+
+.toolbar a {
+    display: inline-block;
+    border: 1px solid transparent;
+    margin: 2px 0px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 18px;
+    height: 18px;
+    background: no-repeat center left;
+}
+
+.toolbar .sep {
+    display: inline-block;
+    width: 1px;
+    background: #a5a5a5;
+    margin: 1px 3px;
+    height: 20px;
+}
+
+.toolbar.float-left{
+    float:left;
+    margin-right: 3px;
+}
+
+.toolbar.float-right{
+    float:right;
+}
+
+.toolbar .b-new {
+    background-image: url(/static/img/clippy/window/toolbar/new.png);
+}
+
+.toolbar .b-open {
+    background-image: url(/static/img/clippy/window/toolbar/open.png);
+}
+
+.toolbar .b-save {
+    background-image: url(/static/img/clippy/window/toolbar/save.png);
+}
+
+.toolbar .b-print {
+    background-image: url(/static/img/clippy/window/toolbar/print.png);
+}
+
+.toolbar .b-preview {
+    background-image: url(/static/img/clippy/window/toolbar/preview.png);
+}
+
+.toolbar .b-spell {
+    background-image: url(/static/img/clippy/window/toolbar/spell.png);
+}
+
+.toolbar .b-copy {
+    background-image: url(/static/img/clippy/window/toolbar/copy.png);
+}
+
+.toolbar .b-paste {
+    background-image: url(/static/img/clippy/window/toolbar/paste.png);
+}
+
+.toolbar .b-style-brush {
+    background-image: url(/static/img/clippy/window/toolbar/style-brush.png);
+}
+
+.toolbar .b-undo {
+    background-image: url(/static/img/clippy/window/toolbar/undo.png);
+}
+
+.toolbar .b-redo {
+    background-image: url(/static/img/clippy/window/toolbar/redo.png);
+}
+
+.toolbar .b-style {
+    background-image: url(/static/img/clippy/window/toolbar/style.png);
+}
+
+.toolbar .b-bold {
+    background-image: url(/static/img/clippy/window/toolbar/bold.png);
+}
+
+.toolbar .b-italic {
+    background-image: url(/static/img/clippy/window/toolbar/italic.png);
+}
+
+.toolbar .b-underline {
+    background-image: url(/static/img/clippy/window/toolbar/underline.png);
+}
+
+.toolbar .b-left {
+    background-image: url(/static/img/clippy/window/toolbar/left.png);
+}
+
+.toolbar .b-center {
+    background-image: url(/static/img/clippy/window/toolbar/center.png);
+}
+
+.toolbar .b-right {
+    background-image: url(/static/img/clippy/window/toolbar/right.png);
+}
+
+.toolbar .b-ol {
+    background-image: url(/static/img/clippy/window/toolbar/ol.png);
+}
+
+.toolbar .b-ul {
+    background-image: url(/static/img/clippy/window/toolbar/ul.png);
+}
+
+.toolbar .b-share {
+    background-image: url(/static/img/clippy/window/toolbar/share.png);
+}
+
+.toolbar .b-tweet {
+    background-image: url(/static/img/clippy/window/toolbar/tweet.png);
+}
+
+.toolbar .b-fork {
+    background-image: url(/static/img/clippy/window/toolbar/fork.png);
+}
+
+.toolbar a:hover {
+    background-color: #d6d6de;
+    border-color: #08216b;
+}
+
+.toolbar a.text{
+    width:auto;
+    padding-left:22px;
+    padding-right:4px;
+    line-height: 18px;
+    background-position: 2px 1px;
+}
+
+.toolbar a.text em{
+    font-style: normal;
+    display: inline-block;
+    padding:2px;
+    font-size: 10px;
+    line-height: 10px;
+    background: #d8e6ff;
+    border:1px solid #c2d3f4;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+
+.toolbar .picker {
+    line-height: 18px;
+    height: 18px;
+    background: #fff;
+    margin: 4px 0 2px 0;
+    display: inline-block;
+    padding-left:3px;
+    position: relative;
+    vertical-align: top;
+}
+
+.toolbar .picker .arrow{
+    display: block;
+    float:right;
+    width:11px;
+    background: #deded6 url(/static/img/clippy/window/toolbar/combo.png) no-repeat center center;
+    height:16px;
+    margin:1px 1px 1px 10px;
+}
+
+/****
+* Content
+***/
+
+.content {
+    border: 1px solid #848484;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.content-box {
+    border: 1px solid #424242;
+    border-right-color: #d6d6ce;
+    border-bottom-color: #d6d6ce;
+    background: #848484;
+    position: relative;
+}
+
+/****
+* Rulers
+****/
+
+.top-ruler {
+    height: 24px;
+    background: #d6d6ce url(/static/img/clippy/window/ruler-mark.png) no-repeat left top;
+    padding-left: 25px;
+}
+
+.top-ruler .ruler {
+    background: url(/static/img/clippy/window/horz-ruler.png);
+    height: 24px;
+    margin-left: 2px;
+    margin-right: 20px;
+}
+
+.left-ruler {
+    position: relative;
+    width: 22px;
+    background: #d6d6ce;
+    float: left;
+}
+
+/****
+* Document
+***/
+
+.document-scroller {
+    overflow-y: scroll;
+    margin-left: 24px;
+}
+
+.document-content {
+    /* default font size on content */
+    font-size: 14px; 
+}
+
+.document {
+    margin: 5px auto 10px auto;
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 0 0 #000;
+    min-height: 1000px;
+}
+
+.document-wrap {
+    padding: 35px;
+    outline: none;
+}
+
+/****
+* Status bar
+***/
+
+.status-bar {
+    margin-top: 5px;
+    border-top: 1px solid #848484;
+    /* background: url(/static/img/clippy/window/status-bar-grip.png) no-repeat right bottom; */
+}
+
+.status-bar-content {
+    border-top: 1px solid #fff;
+    padding: 4px 2px 2px 5px;
+}
+
+.status-bar .box {
+    display: inline-block;
+    /* border: 1px solid #e7dede; */
+    padding: 0px 5px;
+    /* margin-right: 5px; */
+    border: 1px solid #424242;
+    border-right-color: #d6d6ce;
+    border-bottom-color: #d6d6ce;
+    /* background: #848484; */
+}
+
+.status-bar .box.disabled {
+    color: #848484;
+}
+
+/* Clippy.css */
+.clippy, .clippy-balloon {
+    position: fixed;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.clippy-balloon {
+
+    background: #FFC;
+    color: black;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+.clippy-content {
+    max-width: 200px;
+    min-width: 120px;
+    font-family: "Microsoft Sans", sans-serif;
+    font-size: 10pt;
+}
+
+.clippy-tip {
+    width: 10px;
+    height: 16px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgCAMAAAAlvKiEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF///MAAAA////52QwgAAAAAN0Uk5T//8A18oNQQAAAGxJREFUeNqs0kEOwCAIRFHn3//QTUU6xMyyxii+jQosrTPkyPEM6IN3FtzIRk1U4dFeKWQiH6pRRowMVKEmvronEynkwj0uZJgR22+YLopPSo9P34wJSamLSU7lSIWLJU7NkNomNlhqxUeAAQC+TQLZyEuJBwAAAABJRU5ErkJggg==) no-repeat;
+    position: absolute;
+}
+
+.clippy-top-left .clippy-tip {
+    top: 100%;
+    margin-top: 0px;
+    left: 100%;
+    margin-left: -50px;
+}
+
+.clippy-top-right .clippy-tip {
+    top: 100%;
+    margin-top: 0px;
+    left: 0;
+    margin-left: 50px;
+    background-position: -10px 0;
+
+}
+
+.clippy-bottom-right .clippy-tip {
+    top: 0;
+    margin-top: -16px;
+    left: 0;
+    margin-left: 50px;
+    background-position: -10px -16px;
+}
+
+.clippy-bottom-left .clippy-tip {
+    top: 0;
+    margin-top: -16px;
+    left: 100%;
+    margin-left: -50px;
+    background-position: 0px -16px;
+}
+

@@ -1,0 +1,632 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    
+    
+        <title>MhackeCTF </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="mHACKeCTF">
+        <meta name="author" content="mHACKeroni">
+
+        <meta property="og:title" content="mHACKeCTF" />
+        <meta property="og:type" content="mHACKeroni CTF" />
+        <meta property="og:url" content="https://ctf.mhackeroni.it" />
+        <meta property="og:image" content="https://ctf.mhackeroni.it/static/img/mhackelogo.png" />
+
+
+        <link rel="shortcut icon" href="/static/img/favicon.ico">
+
+        <link rel="stylesheet" href="/static/css/bootstrap_new.css">
+        <link rel="stylesheet" href="/static/css/ctforge.css">
+        <link rel="stylesheet" href="/static/css/datatables.min.css">
+        <link rel="stylesheet" href="/static/css/flatpickr.min.css">
+        <link rel="stylesheet" href="/static/css/flatpickr.dark.css">
+        
+        <link rel="stylesheet" href="/static/css/mhackectf.css">
+        
+
+        <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="/static/js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="/static/js/popper.min.js"></script>
+        <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/static/js/datatables.min.js"></script>
+        <script type="text/javascript" src="/static/js/flatpickr.min.js"></script>
+
+        <script type="text/javascript" src="/static/js/dctf.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="/static/css/clippyjs.css" media="all">
+        
+
+<style>
+.button-3d, ::after, ::before {
+	box-sizing: unset !important;
+}
+.close {
+    opacity: 1 !important;
+}
+.document {
+    margin:auto !important;
+    background: #fff;
+    border: none !important;
+    box-shadow: none !important;
+    min-height: initial !important;
+}
+
+.word_page_footer {
+	position: unset !important;
+    align-items: center;
+    height: initial !important;
+    padding-top: 4rem;
+}
+
+.word_page_contents{
+    padding-bottom: initial !important;
+}
+
+@media only screen and (max-width: 529px) {
+    .document-wrap {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        outline: none;
+    }
+}
+
+.content-box{
+    background: #ffffff !important;
+}
+</style>
+
+</head>
+<body>
+<div class="window-wrapper">
+<div class="window">
+<div class="window-border">
+<div class="title-bar h-count">
+
+
+    <div class="control-box">
+        <a class="button-3d minimize"><span>&nbsp;</span></a>
+        <a class="button-3d maximize"><span>&nbsp;</span></a>
+        <a class="button-3d close"><span>&nbsp;</span></a>
+    </div>
+
+            <span class="title">
+                CTF Scoreboard.doc - mHackeWord
+            </span>
+</div>
+
+<div class="menu-bar  h-count">
+    <a><span>F</span>ile</a>
+    <a><span>E</span>dit</a>
+    <a><span>V</span>iew</a>
+    <a><span>I</span>nsert</a>
+    <a>F<span>o</span>rmat</a>
+    <a><span>T</span>ools</a>
+    <a>T<span>a</span>ble</a>
+    <a><span>W</span>indow</a>
+    <a><span>H</span>elp</a>
+
+    <div class="clear"></div>
+</div>
+
+<div class="toolbar float-left">
+    <a class="b-new"></a>
+    <a class="b-open"></a>
+    <a class="b-save"></a>
+    <span class="sep"></span>
+
+    <a class="b-print"></a>
+    <a class="b-spell"></a>
+    <span class="sep"></span>
+
+    <a class="b-copy"></a>
+    <a class="b-paste"></a>
+    <span class="sep"></span>
+
+    <a class="b-undo" data-cmd="undo"></a>
+    <a class="b-redo"  data-cmd="redo"></a>
+
+    <div class="clear"></div>
+</div>
+
+<div class="toolbar  float-left h-count">
+    <a class="b-style"></a>
+
+    <div class="picker"><span class="arrow"></span>Normal</div>
+    <div class="picker"><span class="arrow"></span>Times New Roman</div>
+    <div class="picker"><span class="arrow"></span>12</div>
+
+    <span class="sep"></span>
+
+    <a class="b-bold" data-cmd="bold"></a>
+    <a class="b-italic" data-cmd="italic"></a>
+    <a class="b-underline"  data-cmd="underline"></a>
+    <span class="sep"></span>
+
+    <a class="b-left"  data-cmd="justifyLeft"></a>
+    <a class="b-center" data-cmd="justifyCenter"></a>
+    <a class="b-right" data-cmd="justifyRight"></a>
+
+    <div class="clear"></div>
+</div>
+<div class="clear"></div>
+
+<div class="content">
+    <div class="content-box">
+        <div class="top-ruler  h-count">
+            <div class="ruler"></div>
+        </div>
+        <div class="left-ruler"></div>
+        <div class="document-scroller">
+
+            <div class="document-content">
+                <div class="document container-fluid">
+                
+                    <div class="document-wrap">
+                        <div class="word_page_contents">
+
+                            
+                            <nav class="navbar navbar-expand-lg navbar-light mhackenav">
+                                <a class="navbar-brand" href="/">
+                                    <!-- MhackeCTF --><img src="/static/img/mhackelogo.png" width="56" height="56" alt="">
+                                    <span class="text-muted ml-2"><small>mHACKeroni Inc.</small></span>
+                                </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <!-- mHACKeroni Inc. -->
+                                    </ul>
+                                    <ul class="navbar-nav navbar-right">
+                                        
+                                        <li class="nav-item active"><a class="nav-link" href="/scoreboard">Scoreboard</a></li>
+                                        
+                                        <li class="nav-item"><a class="nav-link" href="https://docs.google.com/document/d/1iyiKghS8Q-a0l75AFrzDvWAqTEXmFMllTtXH26Sn4Ns" target="_blank">Rules</a></li>
+                                        <li class="nav-item "><a class="nav-link" href="/teams">Teams</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <hr class="mt-0">
+                            
+
+
+
+                            
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-8">
+            <h1><span class="fa fa-line-chart"></span> Scoreboard</h1>
+            <div>
+                
+                Round <span id="rnd-current">131</span>.
+                <span id="countdown-container">
+                    Next round starting in <span id="countdown"></span>
+                </span>
+                
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-inline pull-right">
+                <div class="input-group mb-2 mr-sm-2">
+                    <input type="text" class="form-control form-control-sm" id="ticks-to-display" placeholder="Ticks to Display">
+                    <div class="input-group-append">
+                        <button class="input-group-text" id="ticks-to-display-refresh"><span class="fa fa-refresh"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<canvas id="scoregraph" width="450" height="100"></canvas>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-bordered scoreboard"></table>
+    </div>
+</div>
+
+<script>
+
+var seconds_left = 0;
+var current_round = 131;
+var update_period = 30;
+
+var team_name = null;
+
+
+function formatNumber(n) {
+    const prefix = (n >= 0) ? "  " : " ";
+    return prefix + n.toLocaleString("en-US", {"minimumFractionDigits": 2, "maximumFractionDigits": 2});
+}
+
+function renderTeamName(row) {
+    let div = $("<div>");
+    if (row.logo !== null) {
+        div.append($("<img class='team-logo-scoreboard'>").attr("src", row.logo));
+    }
+    return div.append($("<div class='d-inline-block'>").append([
+        $("<span class='font-weight-bold'>").text(row.name),
+        $("<small>").text(row.ip === null ? '' : ` (${row.ip})`)
+    ])).prop("outerHTML");
+}
+
+function renderService(serviceName) {
+    return function (row) {
+        let s = row.services[serviceName];
+
+        if (s === undefined) {
+            s = {
+                integrity: [], attack: 0, attack_flags: 0,
+                defense: 0, defense_flags: 0, sla: 0
+            };
+        }
+
+        let ic = $("<div>");
+        for (let i = 0; i < s.integrity.length; i++) {
+            let marker = $("<span class='integrity-status'>");
+            let status = null;
+            if (s.integrity[i] === null) {
+                status = "not checked";
+                marker.addClass("integrity-unchecked");
+            } else if (s.integrity[i]) {
+                status = "up";
+                marker.addClass("integrity-up");
+            } else {
+                status = "down";
+                marker.addClass("integrity-down");
+            }
+            marker.attr("title", `Round ${current_round-s.integrity.length+i+1}: ${status}`);
+            ic.append(marker);
+        }
+
+        if (s.integrity.length > 0) {
+            let last = s.integrity[s.integrity.length - 1];
+            let marker = $("<span class='integrity-description'>");
+            if (last === null) {
+                marker.addClass("integrity-unchecked").text("-");
+            } else if (last) {
+                marker.addClass("integrity-up").text("ok");
+            } else {
+                marker.addClass("integrity-down").text("down");
+            }
+            ic.append(marker);
+        }
+
+        let atk = $("<tr title='attack'>").append([
+             $("<td class='font-weight-bold text-right'>VAPT</td>"),
+             $("<td>").append([
+                 formatNumber(s.attack),
+                 $("<small>").text(' ( '+s.attack_flags).append([
+                     " ",
+                     $("<span class='fa fa-flag'>"),
+                     " )"
+                 ])
+             ])
+        ]);
+
+        let def = $("<tr title='defense'>").append([
+             $("<td class='font-weight-bold text-right'>SOC</td>"),
+             $("<td>").append([
+                 formatNumber(s.defense),
+                 $("<small>").text(' ( '+s.defense_flags).append([
+                     " ",
+                     $("<span class='fa fa-flag'>"),
+                     " )"
+                 ])
+             ])
+        ]);
+
+        let sla = $("<tr title='SLA'>").append([
+             $("<td class='font-weight-bold text-right'>SLA</td>"),
+             $("<td>").append(formatNumber(s.sla))
+        ]);
+
+        let table = $("<table class='score text-left'>").append([atk, def, sla])
+        return $("<div class='d-inline-block'>").append([ic, table]).prop("outerHTML");
+    }
+}
+
+function renderScore(row) {
+    let points = $("<tr title='global score'>").append([
+        $("<td class='font-weight-bold text-right'>TOTAL</td>"), $("<td>").append(formatNumber(row.score))
+    ]);
+    let atk = $("<tr title='attack'>").append([
+        $("<td class='font-weight-bold text-right'>VAPT</td>"), $("<td>").append(formatNumber(row.attack))
+    ]);
+    let def = $("<tr title='defense'>").append([
+        $("<td class='font-weight-bold text-right'>SOC</td>"), $("<td>").append(formatNumber(row.defense))
+    ]);
+    let sla = $("<tr title='SLA'>").append([
+        $("<td class='font-weight-bold text-right'>SLA</td>"), $("<td>").append(formatNumber(row.sla))
+    ]);
+    let table = $("<table class='score text-left'>").append([points, atk, def, sla])
+    return $("<div class='d-inline-block'>").append(table).prop("outerHTML");
+}
+
+function hashCode(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+         hash = str.charCodeAt(i) + ((hash << 5) - hash);
+     }
+     return hash;
+ }
+
+ function intToRGB(i){
+     const c = (i & 0x00FFFFFF)
+         .toString(16)
+         .toUpperCase();
+     return "00000".substring(0, 6 - c.length) + c;
+ }
+
+ var ctx = document.getElementById('scoregraph').getContext('2d');
+ Chart.defaults.global.animation.duration = 0;
+ var scoreGraph = new Chart(ctx, {
+     type: 'line',
+     data: {
+         labels: [],
+         datasets: []
+     },
+     options: {
+         legend: {
+             position: 'bottom'
+         },
+         tooltips: {
+             enabled: true,
+         },
+         scales: {
+             yAxes: [{
+                 scaleLabel: {
+                     display: true,
+                     labelString: 'Global Score'
+                 }
+             }],
+             xAxes: [{
+                 scaleLabel: {
+                     display: true,
+                     labelString: 'Round'
+                 }
+             }]
+         },
+     },
+
+ });
+
+function updateChart() {
+    let ticks_to_display = (localStorage.getItem('ticks-to-display') | 0) || 20;
+
+    $.getJSON(`/ctf_stats/${ticks_to_display}.json`, function (scores) {
+         if (!scores) return;
+
+         scoreGraph.data.labels = [];
+         scoreGraph.data.datasets = [];
+
+         let teams = Object.keys(scores);
+         scoreGraph.options.title = { display: false };
+
+         teams.sort(function (teamA, teamB) {
+             return (scores[teamA][current_round-1] - scores[teamB][current_round-1]);
+         }).reverse();
+
+         let idx = teams.indexOf(team_name);
+         if (idx === -1) {
+             teams = teams.slice(0,10);
+         } else {
+             let minIdx = Math.max(idx - 4, 0);
+             let maxIdx = Math.min(idx + 5, teams.length);
+             teams = teams.slice(minIdx, maxIdx);
+         }
+
+         for (let team of teams) {
+             if (scoreGraph.data.labels.length === 0) {
+                 scoreGraph.data.labels = Object.keys(scores[team]).map(parseFloat);
+             }
+             let color = '#' + intToRGB(hashCode(team + 'Oht3xZg8'));
+             scoreGraph.data.datasets.push({
+                 label: team,
+                 data: Object.values(scores[team]),
+                 backgroundColor: color,
+                 borderColor: color,
+                 borderWidth: 3,
+                 pointRadius: 0,
+                 pointHitRadius: 4,
+                 fill: false
+             })
+         }
+         scoreGraph.update();
+     });
+ }
+
+function updateCountdown() {
+    seconds_left--;
+    const minutes = Math.floor(seconds_left / 60);
+    const seconds = seconds_left % 60;
+    $("#countdown").text(`${minutes}m ${seconds}s`);
+    if (seconds_left < 0) {
+        $("#countdown-container").hide();
+    } else {
+        $("#countdown-container").show();
+    }
+ }
+
+$(document).ready(function() {
+
+    $('.scoreboard').DataTable({
+        "ajax": {
+            "url": "/ctf_scoreboard.json",
+            "dataSrc": "scores"
+        },
+        "columns": [
+            { "name": "position", "defaultContent": "", "title": "#", "className": "align-middle text-left counter" },
+            { "name": "team", "data": renderTeamName, "title": "Team", "className": "align-middle text-left" },
+            
+            { "name": "services-brokechain", "data": renderService("brokechain"),
+                "title": "<a href='https://docs.google.com/presentation/d/1Tk8xAg58B6mZQejekxRXsaoD8WvdSALUYg6A-aahzyc/edit?usp=sharing'>brokechain</a><br><small><span id=brokechain-unexploited>0</span> unexploited flag stores</small>",
+                "className": "text-center" },
+            
+            { "name": "services-mgb", "data": renderService("mgb"),
+                "title": "<a href='https://docs.google.com/presentation/d/1Bx6RSf4qkjg5Ud0Bwxm-9Ix4k9Pk97gKcVopjveM0cw/edit?usp=sharing'>mgb</a><br><small><span id=mgb-unexploited>0</span> unexploited flag stores</small>",
+                "className": "text-center" },
+            
+            { "name": "services-mhackeErp", "data": renderService("mhackeErp"),
+                "title": "<a href='https://docs.google.com/presentation/d/12uMekk_IyWhn-cp5B3S7jdqkDFYDryE4VNaPpFUC9Ws/edit?usp=sharing'>mhackeErp</a><br><small><span id=mhackeErp-unexploited>0</span> unexploited flag stores</small>",
+                "className": "text-center" },
+            
+            { "name": "services-sheetty", "data": renderService("sheetty"),
+                "title": "<a href='https://docs.google.com/presentation/d/1cSW-ojYEibRfVypOmVoq57gQTZQpCy5vTSglqE9XAkY/edit?usp=sharing'>sheetty</a><br><small><span id=sheetty-unexploited>0</span> unexploited flag stores</small>",
+                "className": "text-center" },
+            
+            { "name": "services-simmtapp", "data": renderService("simmtapp"),
+                "title": "<a href='https://docs.google.com/presentation/d/1qguk_n8XIXd2Z57eeuT7D7-HduuPuN5rhOzNW5DAP7o/edit?usp=sharing'>simmtapp</a><br><small><span id=simmtapp-unexploited>0</span> unexploited flag stores</small>",
+                "className": "text-center" },
+            
+            { "name": "points", "data": renderScore, "title": "Points", "className": "align-middle text-center" },
+        ],
+        "ordering": false,
+        "paging": false,
+        "dom": "t"
+    });
+
+    $(".scoreboard").DataTable().on("xhr", (e, settings, json) => {
+        current_round = json.round;
+        if (seconds_left <= 0) {
+            seconds_left = json.seconds_left;
+            updateCountdown();
+        }
+        for (let service of Object.keys(json.unexploited_flagstores)) {
+            $(`#${service}-unexploited`).text(json.unexploited_flagstores[service]);
+        }
+        $("#rnd-scores").text(current_round - 1);
+        $("#rnd-current").text(current_round);
+    });
+
+    if (localStorage.getItem('ticks-to-display')) {
+         $("#ticks-to-display").val(localStorage.getItem('ticks-to-display'));
+    }
+    $("#ticks-to-display-refresh").click(function (){
+         let ticks = $("#ticks-to-display").val();
+         if (ticks) {
+             localStorage.setItem("ticks-to-display", ticks);
+         } else {
+             localStorage.removeItem("ticks-to-display");
+         }
+         updateChart();
+    });
+
+    updateCountdown();
+    updateChart();
+    setInterval(function () {
+         if (seconds_left <= -5 || seconds_left > 0 && seconds_left % update_period === 0) {
+             $('.scoreboard').DataTable().ajax.reload();
+         }
+         if (seconds_left > 0 && seconds_left % (update_period * 2) === 0) {
+             updateChart();
+         }
+         updateCountdown();
+    }, 100000);
+});
+</script>
+
+
+                            
+                            <div class="word_page_footer">
+                                <hr>
+                                <footer>
+                                <p class="muted credit d-flex justify-content-between align-items-center">
+                                    <span>
+                                        <small>Powered by <a href="https://github.com/secgroup/ctforge/" target="_blank"><img src="/static/img/ctforge_black.png" class="foot" alt="CTForge"></a></small>
+                                        <br>
+                                        <small>Runs on <a href="https://cloud.google.com" target="_blank"><img src="/static/img/cloud-logo.svg" class="foot ml-2" alt="GCP"></a></small>
+                                    </span>
+                                    <small class="pull-right"><a href="/credits" class="text-secondary">Credits</a></small>
+                                </p>
+                                </footer><!-- /footer -->
+                            </div>
+                            
+
+                             <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+
+    
+    </div>
+
+    <div class="status-bar  h-count">
+        <div class="status-bar-content">
+                    <span class="box">
+                        Page 1
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Sec 1
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        1/1
+                        &nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span class="box">
+                        At 1"
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Ln 1
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Col 1
+                        &nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span class="box disabled">
+                        REC
+                    </span>
+                    <span class="box disabled">
+                        TRK
+                    </span>
+                    <span class="box">
+                        English (U.S.)
+                    </span>
+                    <span class="box disabled">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+<script type="text/javascript" src="/static/js/clippyjs.js"></script>
+
+<script>
+    
+    let messages = [
+        
+    ];
+    
+
+    clippy.load('Clippy', async function(agent) {
+        agent.show();
+        agent.moveTo($(window).width()-200, 20);
+
+        for (let [category, message] of messages) {
+            agent.play(category === 'error' ? 'GetAttention' : 'Congratulate');
+            agent.speak(message);
+        }
+    });
+</script>
+
+<!-- End Document
+================================================== -->
+</div>
+</body>
+</html>
+

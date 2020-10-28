@@ -1,0 +1,1129 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    
+    
+        <title>MhackeCTF </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="mHACKeCTF">
+        <meta name="author" content="mHACKeroni">
+
+        <meta property="og:title" content="mHACKeCTF" />
+        <meta property="og:type" content="mHACKeroni CTF" />
+        <meta property="og:url" content="https://ctf.mhackeroni.it" />
+        <meta property="og:image" content="https://ctf.mhackeroni.it/static/img/mhackelogo.png" />
+
+
+        <link rel="shortcut icon" href="/static/img/favicon.ico">
+
+        <link rel="stylesheet" href="/static/css/bootstrap_new.css">
+        <link rel="stylesheet" href="/static/css/ctforge.css">
+        <link rel="stylesheet" href="/static/css/datatables.min.css">
+        <link rel="stylesheet" href="/static/css/flatpickr.min.css">
+        <link rel="stylesheet" href="/static/css/flatpickr.dark.css">
+        
+        <link rel="stylesheet" href="/static/css/mhackectf.css">
+        
+
+        <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="/static/js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="/static/js/popper.min.js"></script>
+        <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/static/js/datatables.min.js"></script>
+        <script type="text/javascript" src="/static/js/flatpickr.min.js"></script>
+
+        <script type="text/javascript" src="/static/js/dctf.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="/static/css/clippyjs.css" media="all">
+        
+
+<style>
+.button-3d, ::after, ::before {
+	box-sizing: unset !important;
+}
+.close {
+    opacity: 1 !important;
+}
+</style>
+
+</head>
+<body>
+<div class="window-wrapper">
+<div class="window">
+<div class="window-border">
+<div class="title-bar h-count">
+
+
+    <div class="control-box">
+        <a class="button-3d minimize"><span>&nbsp;</span></a>
+        <a class="button-3d maximize"><span>&nbsp;</span></a>
+        <a class="button-3d close"><span>&nbsp;</span></a>
+    </div>
+
+            <span class="title">
+                Teams.doc - mHackeWord
+            </span>
+</div>
+
+<div class="menu-bar  h-count">
+    <a><span>F</span>ile</a>
+    <a><span>E</span>dit</a>
+    <a><span>V</span>iew</a>
+    <a><span>I</span>nsert</a>
+    <a>F<span>o</span>rmat</a>
+    <a><span>T</span>ools</a>
+    <a>T<span>a</span>ble</a>
+    <a><span>W</span>indow</a>
+    <a><span>H</span>elp</a>
+
+    <div class="clear"></div>
+</div>
+
+<div class="toolbar float-left">
+    <a class="b-new"></a>
+    <a class="b-open"></a>
+    <a class="b-save"></a>
+    <span class="sep"></span>
+
+    <a class="b-print"></a>
+    <a class="b-spell"></a>
+    <span class="sep"></span>
+
+    <a class="b-copy"></a>
+    <a class="b-paste"></a>
+    <span class="sep"></span>
+
+    <a class="b-undo" data-cmd="undo"></a>
+    <a class="b-redo"  data-cmd="redo"></a>
+
+    <div class="clear"></div>
+</div>
+
+<div class="toolbar  float-left h-count">
+    <a class="b-style"></a>
+
+    <div class="picker"><span class="arrow"></span>Normal</div>
+    <div class="picker"><span class="arrow"></span>Times New Roman</div>
+    <div class="picker"><span class="arrow"></span>12</div>
+
+    <span class="sep"></span>
+
+    <a class="b-bold" data-cmd="bold"></a>
+    <a class="b-italic" data-cmd="italic"></a>
+    <a class="b-underline"  data-cmd="underline"></a>
+    <span class="sep"></span>
+
+    <a class="b-left"  data-cmd="justifyLeft"></a>
+    <a class="b-center" data-cmd="justifyCenter"></a>
+    <a class="b-right" data-cmd="justifyRight"></a>
+
+    <div class="clear"></div>
+</div>
+<div class="clear"></div>
+
+<div class="content">
+    <div class="content-box">
+        <div class="top-ruler  h-count">
+            <div class="ruler"></div>
+        </div>
+        <div class="left-ruler"></div>
+        <div class="document-scroller">
+
+            <div class="document-content">
+                <div class="document container">
+                
+                    <div class="document-wrap">
+                        <div class="word_page_contents">
+
+                            
+                            <nav class="navbar navbar-expand-lg navbar-light mhackenav">
+                                <a class="navbar-brand" href="/">
+                                    <!-- MhackeCTF --><img src="/static/img/mhackelogo.png" width="56" height="56" alt="">
+                                    <span class="text-muted ml-2"><small>mHACKeroni Inc.</small></span>
+                                </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <!-- mHACKeroni Inc. -->
+                                    </ul>
+                                    <ul class="navbar-nav navbar-right">
+                                        
+                                        <li class="nav-item "><a class="nav-link" href="/scoreboard">Scoreboard</a></li>
+                                        
+                                        <li class="nav-item"><a class="nav-link" href="https://docs.google.com/document/d/1iyiKghS8Q-a0l75AFrzDvWAqTEXmFMllTtXH26Sn4Ns" target="_blank">Rules</a></li>
+                                        <li class="nav-item active"><a class="nav-link" href="/teams">Teams</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <hr class="mt-0">
+                            
+
+
+
+                            
+
+<h1>Teams</h1>
+
+<div class="list-group mx-2 reset-counter">
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                HighSpeedLowDrag
+                
+                <img class="ml-2" src="/static/img/flags/US.png" alt="US">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="saarsec 📠" src="/files/logos/11.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                saarsec 📠
+                
+                <img class="ml-2" src="/static/img/flags/DE.png" alt="DE">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="ENOFLAG" src="/files/logos/13.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                ENOFLAG
+                
+                <img class="ml-2" src="/static/img/flags/DE.png" alt="DE">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="ALLES!" src="/files/logos/19.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                ALLES!
+                
+                <img class="ml-2" src="/static/img/flags/DE.png" alt="DE">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="hack0rs" src="/files/logos/21.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                hack0rs
+                
+                <img class="ml-2" src="/static/img/flags/NL.png" alt="NL">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="CeSeNA_Ulisse" src="/files/logos/23.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                CeSeNA_Ulisse
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="HgbSec" src="/files/logos/24.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                HgbSec
+                
+                <img class="ml-2" src="/static/img/flags/AT.png" alt="AT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="Squareroots" src="/files/logos/25.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                Squareroots
+                
+                <img class="ml-2" src="/static/img/flags/DE.png" alt="DE">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="3k" src="/files/logos/27.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                3k
+                
+                <img class="ml-2" src="/static/img/flags/TN.png" alt="TN">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                MC680x0
+                
+                <img class="ml-2" src="/static/img/flags/HU.png" alt="HU">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="Re1n3r!" src="/files/logos/33_9a2c1f322a.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                Re1n3r!
+                
+                <img class="ml-2" src="/static/img/flags/DE.png" alt="DE">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="r00tstici" src="/files/logos/35_20ca741773.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                r00tstici
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="PizzaOverflow 📠" src="/files/logos/36_9edaffc634.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                PizzaOverflow 📠
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="STT" src="/files/logos/41_16bc881c0f.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                STT
+                
+                <img class="ml-2" src="/static/img/flags/PT.png" alt="PT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="ZenHack" src="/files/logos/43_f68066927d.jpg" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                ZenHack
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                Zenith
+                
+                <img class="ml-2" src="/static/img/flags/IN.png" alt="IN">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="born2scan" src="/files/logos/48_a571e7ba97.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                born2scan
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="Shadows" src="/files/logos/51_5172eb3ee3.jpg" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                Shadows
+                
+                <img class="ml-2" src="/static/img/flags/IN.png" alt="IN">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                JustDoIt 📠
+                
+                <img class="ml-2" src="/static/img/flags/AT.png" alt="AT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="two lonely wetox 📠" src="/files/logos/53_073417989a.jpg" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                two lonely wetox 📠
+                
+                <img class="ml-2" src="/static/img/flags/RU.png" alt="RU">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="FAUST" src="/files/logos/54_b63ff37827.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                FAUST
+                
+                <img class="ml-2" src="/static/img/flags/DE.png" alt="DE">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                BleuBytes
+                
+                <img class="ml-2" src="/static/img/flags/FR.png" alt="FR">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="We_0wn_Y0u" src="/files/logos/65_a9d8dca9c3.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                We_0wn_Y0u
+                
+                <img class="ml-2" src="/static/img/flags/AT.png" alt="AT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                Polymod3sum
+                
+                <img class="ml-2" src="/static/img/flags/HK.png" alt="HK">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="[LIFE] Sudo SU" src="/files/logos/78_ec330c8078.jpg" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                [LIFE] Sudo SU
+                
+                <img class="ml-2" src="/static/img/flags/RU.png" alt="RU">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                punk5n0td34d
+                
+                <img class="ml-2" src="/static/img/flags/RU.png" alt="RU">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                Black Bauhinia
+                
+                <img class="ml-2" src="/static/img/flags/HK.png" alt="HK">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="WeAreScientists" src="/files/logos/94_6b53ca6f6f.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                WeAreScientists
+                
+                <img class="ml-2" src="/static/img/flags/AT.png" alt="AT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="InfoSecIITR" src="/files/logos/102_dfecc9f54b.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                InfoSecIITR
+                
+                <img class="ml-2" src="/static/img/flags/IN.png" alt="IN">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                ECSCTeamSpain
+                
+                <img class="ml-2" src="/static/img/flags/ES.png" alt="ES">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="csictf" src="/files/logos/108_4eda4dc335.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                csictf
+                
+                <img class="ml-2" src="/static/img/flags/IN.png" alt="IN">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                iCarramba
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                Daemon Summoners
+                
+                <img class="ml-2" src="/static/img/flags/CA.png" alt="CA">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                kalmarunionen 📠
+                
+                <img class="ml-2" src="/static/img/flags/DK.png" alt="DK">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="Pastafrola" src="/files/logos/113_86b0b8d0ab.jpeg" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                Pastafrola
+                
+                <img class="ml-2" src="/static/img/flags/AR.png" alt="AR">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="Mvtinapwn" src="/files/logos/117_b38e1a24f1.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                Mvtinapwn
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="Kernel Sanders" src="/files/logos/118_41e65909f6.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                Kernel Sanders
+                
+                <img class="ml-2" src="/static/img/flags/US.png" alt="US">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="ByteForc3" src="/files/logos/126_76cad67c7e.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                ByteForc3
+                
+                <img class="ml-2" src="/static/img/flags/IN.png" alt="IN">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="lolcads 📠" src="/files/logos/128_1778a1b2c9.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                lolcads 📠
+                
+                <img class="ml-2" src="/static/img/flags/DE.png" alt="DE">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="MadrHacks" src="/files/logos/129_ee1d2faee7.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                MadrHacks
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="bi0s" src="/files/logos/131_18eaf8a181.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                bi0s
+                
+                <img class="ml-2" src="/static/img/flags/IN.png" alt="IN">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="4bitOfMagic@Unitn" src="/files/logos/136_0e1b4f845c.png" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                4bitOfMagic@Unitn
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="0FA" src="/files/logos/143_112f4f07ae.jpg" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                0FA
+                
+                <img class="ml-2" src="/static/img/flags/CH.png" alt="CH">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                piggybacking
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="srdnlen" src="/files/logos/146_017d541933.jpeg" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                srdnlen
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="hack^3" src="/files/logos/150_7f014dd21b.jpg" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                hack^3
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                u310831124E0B5DF3311A
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                Oneirologists
+                
+                <img class="ml-2" src="/static/img/flags/AU.png" alt="AU">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                pwnthem0le
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="orange squishy fishy" src="/files/logos/160_f9a6f9c6f2.jpg" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                orange squishy fishy
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="Pwnthenope" src="/files/logos/165_7b5f9fa637.jpg" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                Pwnthenope
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="T-Mattoni" src="/files/logos/169_2dd2922c81.jpg" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                T-Mattoni
+                
+                <img class="ml-2" src="/static/img/flags/IT.png" alt="IT">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <img class="team-logo" alt="NETPENGUIN" src="/files/logos/173_a90efbbfdb.jpg" />
+                
+            <p class="font-weight-bold my-0 ml-5">
+                NETPENGUIN
+                
+                <img class="ml-2" src="/static/img/flags/DE.png" alt="DE">
+                
+            </p>
+
+        </div>
+
+    
+
+        <div class="list-group-item d-flex justify-content-left align-items-center mx-1">
+            <span class="counter text-muted"></span>
+            
+                <span style="height: 64px; padding-left: 64px;"></span>
+            
+            <p class="font-weight-bold my-0 ml-5">
+                Shellphish
+                
+                <img class="ml-2" src="/static/img/flags/US.png" alt="US">
+                
+            </p>
+
+        </div>
+
+    
+</div>
+
+
+                            
+                            <div class="word_page_footer">
+                                <hr>
+                                <footer>
+                                <p class="muted credit d-flex justify-content-between align-items-center">
+                                    <span>
+                                        <small>Powered by <a href="https://github.com/secgroup/ctforge/" target="_blank"><img src="/static/img/ctforge_black.png" class="foot" alt="CTForge"></a></small>
+                                        <br>
+                                        <small>Runs on <a href="https://cloud.google.com" target="_blank"><img src="/static/img/cloud-logo.svg" class="foot ml-2" alt="GCP"></a></small>
+                                    </span>
+                                    <small class="pull-right"><a href="/credits" class="text-secondary">Credits</a></small>
+                                </p>
+                                </footer><!-- /footer -->
+                            </div>
+                            
+
+                             <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+
+    
+    </div>
+
+    <div class="status-bar  h-count">
+        <div class="status-bar-content">
+                    <span class="box">
+                        Page 1
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Sec 1
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        1/1
+                        &nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span class="box">
+                        At 1"
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Ln 1
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Col 1
+                        &nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span class="box disabled">
+                        REC
+                    </span>
+                    <span class="box disabled">
+                        TRK
+                    </span>
+                    <span class="box">
+                        English (U.S.)
+                    </span>
+                    <span class="box disabled">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+<script type="text/javascript" src="/static/js/clippyjs.js"></script>
+
+<script>
+    
+    let messages = [
+        
+    ];
+    
+
+    clippy.load('Clippy', async function(agent) {
+        agent.show();
+        agent.moveTo($(window).width()-170, $(window).height()-200);
+
+        for (let [category, message] of messages) {
+            agent.play(category === 'error' ? 'GetAttention' : 'Congratulate');
+            agent.speak(message);
+        }
+    });
+</script>
+
+<!-- End Document
+================================================== -->
+</div>
+</body>
+</html>
+
